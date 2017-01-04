@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/title_tag"
+    android:layout_width="fill_parent" android:layout_height="@dimen/min_area_action" 
+    android:minHeight="@dimen/min_area_action">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/title_content_tag" 
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip">
+
+        <LinearLayout
+            android:id="@+id/llLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout 
+                android:id="@+id/left" 
+                android:layout_width="@dimen/min_area_action" 
+                android:layout_height="fill_parent">
+                <ImageView android:id="@+id/left_image" 
+                    android:duplicateParentState="true" android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" 
+                    android:src="@drawable/titlebar_back_white" android:layout_alignParentLeft="true" 
+                    android:layout_centerVertical="true" />
+	            <View android:background="@drawable/c_bg_transparent" 
+				    android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCenter"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="楼盘"
+                    android:textColor="@color/white"
+                    android:textSize="22.0sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRight"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout android:id="@+id/right" android:layout_width="@dimen/min_area_action" 
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/right_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/titlebar_back_white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+	            <View android:background="@drawable/c_bg_transparent" 
+				    android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 Patrik Åkerfeldt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>    
+    <declare-styleable name="HaloImageView">
+        <attr name="drawBorder" format="boolean" />
+        <attr name="drawSelector" format="boolean" />
+        <attr name="borderColor" format="color" />
+    	<attr name="borderThickness" format="dimension" />
+        <attr name="centerAbove" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="LinearLayout">
+        <attr name="divider" format="reference" />
+        <attr name="showDividers" format="integer" />
+        <attr name="dividerPadding" format="dimension" />
+        <attr name="measureWithLargestChild" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LinearListView">
+        <attr name="android:entries"/>
+        <attr name="dividerThickness" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LinearGridView">
+        <attr name="numChildsInGroup" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="EmptyResults">
+        <attr name="title" format="string" />
+        <attr name="subTitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="BaseLoaderListView">
+        <attr name="emptyResultsTitle" format="string" />
+        <attr name="emptyResultsSubtitle" format="string" />
+    </declare-styleable>  
+    <declare-styleable name="StickyButton">
+        <attr name="stickyButtonTitle" format="reference" />
+        <attr name="stickyBackgroundDrawble" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="UserLevelLayout">
+        <attr name="level" format="integer" />
+    </declare-styleable>
+</resources>

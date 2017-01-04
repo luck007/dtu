@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/setting_section"
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    style="@style/editting_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dev_login_email_back"
+                    android:gravity="center_vertical|bottom"
+                    android:hint="@string/dev_login_id"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="11dp"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/setting_section"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/editting_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dev_login_pass_back"
+                    android:ems="10"
+                    android:gravity="bottom|center_vertical"
+                    android:hint="@string/dev_login_password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="11dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                style="@style/button_red"
+                android:layout_marginTop="40.0dip"
+                android:text="@string/dev_confirm"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="40dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bg"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="10"
+                android:text="宁波中科腐蚀控制工程技术有限公司"
+                android:textColor="@color/c_gray_1_5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.dtu.android.views.LoaderFrame
+        android:id="@+id/loader_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/loader_overlay_background"
+        android:visibility="gone" >
+    </com.dtu.android.views.LoaderFrame>
+	
+</FrameLayout>

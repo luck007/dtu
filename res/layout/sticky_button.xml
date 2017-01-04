@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sticky_btn_root"  
+    android:gravity="center" 
+    android:layout_gravity="center" 
+    android:orientation="vertical" 
+    android:background="@drawable/canonical_rausch_button_selector_no_corners" 
+    android:padding="5.0dip" android:layout_width="fill_parent" 
+    android:layout_height="@dimen/sticky_btn_height" 
+    android:alpha="0.9">
+    <TextView android:id="@+id/title"  
+        android:textColor="@color/white" 
+        android:gravity="center" 
+        android:layout_width="wrap_content" 
+        android:layout_height="0.0dip" 
+        android:lines="1" 
+        android:layout_weight="1.0" 
+        style="@style/Canonical.Text.C" />
+    <TextView android:id="@+id/subtitle"  
+        android:textColor="@color/white" 
+        android:gravity="center|top" 
+        android:visibility="gone" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:lines="1" 
+        android:layout_weight="1.0" 
+        style="@style/Canonical.Text.E" />
+</LinearLayout>

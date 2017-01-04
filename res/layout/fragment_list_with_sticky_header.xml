@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp" >
+
+            <TextView
+                android:id="@+id/title_histo_regdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="@string/value_time"
+                android:textSize="17sp"
+                android:visibility="visible" />
+	
+	        <TextView
+	            android:id="@+id/title_histo_potential"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="电位(v)"
+	            android:textSize="17sp"
+	            android:visibility="visible" />
+	
+	        <TextView
+	            android:id="@+id/title_histo_current"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="电流(A)"
+	            android:textSize="17sp"
+	            android:visibility="visible" />
+	
+	        <TextView
+	            android:id="@+id/title_histo_voltage"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="电压(v)"
+	            android:textSize="17sp"
+	            android:visibility="visible" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/loader_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/c_gray_4"
+            android:dividerHeight="@dimen/line_thickness"
+            android:drawSelectorOnTop="true"
+            android:listSelector="?android:selectableItemBackground" >
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.dtu.android.views.EmptyResults
+                android:id="@+id/empty_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:title="@string/search_no_data_title"
+                app:subTitle="@string/search_no_data_subtitle" >
+
+            </com.dtu.android.views.EmptyResults>
+
+        </RelativeLayout>
+
+        <com.dtu.android.views.StickyButton
+            android:id="@+id/sticky_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:stickyBackgroundDrawble="@drawable/canonical_cachi_button_selector"
+            app:stickyButtonTitle="@string/sticky_default_title" >
+        </com.dtu.android.views.StickyButton>
+
+    </LinearLayout>
+
+</FrameLayout>

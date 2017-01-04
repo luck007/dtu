@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/histo_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/joined_peoplelist_space"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="@dimen/joined_peoplelist_space"
+    android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_histo_regdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="TextView"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_histo_potential"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_histo_current"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_histo_voltage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+    
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+            <solid android:color="#ffff5a5f" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/c_grouped_layout_padding">
+        <shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+            <solid android:color="@color/rausch_button_disabled_color" />
+        </shape>
+    </item>
+</layer-list>

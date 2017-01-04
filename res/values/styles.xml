@@ -1,0 +1,173 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="Canonical" />    
+    <style name="Canonical.ImageView" parent="@style/Canonical" />
+    <style name="Canonical.Text" parent="@style/Canonical">
+        <item name="android:textColor">@color/c_hof</item>
+    </style>
+    <style name="Canonical.Text.B" parent="@style/Canonical.Text">
+        <item name="android:textSize">25.0sp</item>
+    </style>
+    <style name="Canonical.Text.C" parent="@style/Canonical.Text">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    
+    <style name="Canonical.Text.E" parent="@style/Canonical.Text">
+        <item name="android:textSize">17.0sp</item>
+    </style>
+    
+    <style name="myself_normal_left_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/c_app_black</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="myself_icon_left_text" parent="@style/myself_normal_left_text">
+        <item name="android:layout_marginLeft">50.0dip</item>
+    </style>
+    <style name="myself_left_icon">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="style_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ico_arrow</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="style_myself_box">
+        <item name="android:paddingLeft">@dimen/activity_bar_left_right_magin</item>
+        <item name="android:paddingRight">@dimen/activity_bar_left_right_magin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52.0dip</item>
+    </style> 
+    
+    <style name="RealState.ActionBarMenuTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="RealState.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:icon">@null</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:displayOptions">showHome</item>
+        <item name="android:titleTextStyle">@style/RealState.ActionBarTitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/RealState.ActionBarSubtitleTextStyle</item>
+    </style>
+    <style name="RealState.ActionBarStyle.Transparent" parent="@style/RealState.ActionBarStyle">
+        <item name="android:background">@null</item>
+        <item name="android:titleTextStyle">@style/RealState.ActionBarTitleTextStyle.Transparent</item>
+        <item name="android:subtitleTextStyle">@style/RealState.ActionBarSubtitleTextStyle.Transparent</item>
+    </style>
+    <style name="RealState.ActionBarSubtitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/c_foggy</item>
+    </style>
+    <style name="RealState.ActionBarSubtitleTextStyle.Transparent" parent="@style/RealState.ActionBarSubtitleTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="RealState.ActionBarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/c_hof</item>
+    </style>
+    <style name="RealState.ActionBarTitleTextStyle.Transparent" parent="@style/RealState.ActionBarTitleTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="RealState.ActionModeStyle" parent="@android:style/Widget.Holo.Light.ActionMode.Inverse">
+        <item name="android:titleTextStyle">@style/RealState.ActionModeTitleStyle</item>
+    </style>
+    <style name="RealState.ActionModeTitleStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/c_special_gray</item>
+    </style>
+    <style name="RealState.TitleTextStyle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">@color/c_hof</item>
+    </style>
+    <style name="TabText" parent="@android:style/TextAppearance.Inverse">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Theme.Dtu" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/c_foggy_white</item>
+        <item name="android:actionBarStyle">@style/RealState.ActionBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/TabText</item>
+        <item name="android:homeAsUpIndicator">@drawable/titlebar_back_white</item>
+        <item name="android:selectableItemBackground">@drawable/c_bg_transparent</item>
+        <item name="android:actionMenuTextAppearance">@style/RealState.ActionBarMenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/c_special_gray</item>
+        <item name="android:actionModeStyle">@style/RealState.ActionModeStyle</item>
+    </style>
+    <style name="Theme.Dtu.TransparentActionBar" parent="@style/Theme.Dtu">
+        <item name="android:actionBarStyle">@style/RealState.ActionBarStyle.Transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Dtu.OverFlow</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.Dtu.OverFlow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow</item>
+    </style>
+    
+    <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:padding">@dimen/gap</item>
+        <item name="android:minWidth">@dimen/min_area_action</item>
+        <item name="android:minHeight">@dimen/min_area_action</item>
+    </style>
+    
+    <!-- DTU -->
+    <style name="editting_right" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColorHint">#ffd0d0d0</item>        
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>                
+    </style>
+    
+    <style name="setting_section">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">18.0dp</item>        
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/space_left</item>
+        <item name="android:layout_marginRight">@dimen/space_left</item>        
+    </style>
+    <style name="button_base">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/setting_margin_right</item>
+        <item name="android:layout_marginTop">22.0dip</item>
+        <item name="android:layout_marginRight">@dimen/setting_margin_right</item>
+    </style>
+    <style name="button_red" parent="@style/button_base">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_red</item>
+    </style>
+</resources>

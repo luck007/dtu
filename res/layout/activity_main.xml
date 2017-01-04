@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    	<FrameLayout
+	        android:id="@+id/content_frame"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	
+	    </FrameLayout>    
+    
+	    <com.dtu.android.views.LoaderFrame
+	        android:id="@+id/loader_frame"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@color/loader_overlay_background"
+	        android:visibility="gone" />
+
+</FrameLayout>

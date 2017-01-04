@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="red">#ffff0000</color>
+    
+    <color name="bg_normal">#ffeeeeee</color>
+    <color name="bg_personal">#fff5f5f5</color>
+    <color name="bg_dark_0">#ffdddddd</color>
+
+    <color name="indicator_selected_title">@color/black</color>
+    <color name="indicator_second_title">#ff999999</color>
+    <color name="indicator_frame">@color/c_cachi</color>
+    <color name="indicator_divider">#e6e6e6</color>
+    
+    <color name="event_detail_join_sec_bg">#ffefeeee</color>
+    <color name="event_detail_join_sec_text">#ffff6a04</color>
+    
+    <color name="bg_bottom_menu">#ff2a2a2a</color>
+    
+	<color name="canonical_press_darken">#14000000</color>
+    <color name="c_foggy">#ff82898d</color>
+    <color name="c_foggy_haze">#ffedefed</color>
+    <color name="c_foggy_light">#ffced1cc</color>
+    <color name="c_foggy_white">#fff5f6f5</color>
+    <color name="c_hof">#ff565a5c</color>
+    <color name="c_hof_dark">#ff282d2e</color>
+    <color name="c_hof_light">#ffdfe0df</color>
+    <color name="c_hof_special">#ffc5c6c6</color>
+    <color name="c_gray_1">@color/c_hof</color>
+    <color name="c_gray_1_5">#ff7d7f80</color>
+    <color name="c_gray_2">#ff98999a</color>
+    <color name="c_gray_3">#ffbdbfc1</color>
+    <color name="c_gray_4">@color/c_hof_light</color>
+    <color name="c_gray_5">#ffedeef0</color>
+    <color name="c_gray_6">@color/c_foggy_white</color>
+    <color name="c_gray_7">#ffe5e5e5</color>
+    <color name="c_gray_8">#ff3c3c3c</color>
+    <color name="c_gray_personal">#ff3c3c3c</color>
+    <color name="c_special_gray">#ffcbcbcb</color>
+    <color name="c_middle_gray">#ffa9a9a9</color>
+    <color name="c_cachi">#fff99533</color>
+	<color name="transparent">@android:color/transparent</color>
+    <color name="text_no_results_subtitle">#ff959b9f</color>
+    <color name="text_no_results_title">#ff505254</color>
+    <color name="loader_overlay_background">#4c000000</color>
+    <color name="text_personal">#ff626262</color>
+	<color name="c_clickable_text">#ff000080</color>
+	<color name="c_app_black">#ff40484c</color>
+    <color name="c_rausch_special">#ffe8c6c7</color>
+    <color name="c_kazan_special">#ffb3cccf</color>
+    <color name="c_babu_special">#ffb3e0dc</color>
+    <color name="c_lima_special">#ffd0e1cb</color>
+    <color name="c_beach_special">#ffe8d9b3</color>
+	
+	<color name="c_marks_color">#ff44bcb5</color>
+
+    <color name="c_orange">#ffff5a5f</color>
+	<color name="orange_1">#fff79534</color>
+	<color name="job_rect_border">#ffc17b19</color>
+	
+	<color name="c_blue_1">#ff57bacf</color>
+	
+    <color name="color_777777">#ff777777</color>
+    <color name="color_707070">#ff707070</color>
+    
+    <!-- DTU -->
+    <color name="rausch_button_disabled_color">#fff8d5d6</color>
+    <color name="c_rausch">#ffff5a5f</color>
+    <color name="c_raush_button_disabled_color">#fff8b9bb</color>
+    <color name="c_raush_button_pressed_color">#ffff7a7f</color>
+    <color name="c_blue">@color/c_rausch</color>
+    <color name="c_rausch_dark">#ffb23138</color>
+    <color name="c_blue_button_pressed">@color/c_rausch_dark</color>    
+    <color name="c_cachi_button_disabled_color">#fff9c18b</color>
+    <color name="c_cachi_button_pressed_color">#ffe28327</color>
+    <color name="divider_gray">#ffa9a9a9</color>   
+</resources>
